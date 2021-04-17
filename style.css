@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: -webkit-linear-gradient(left, #1B45E1, #CAD0E5);
+  background: -moz-linear-gradient(left, #1B45E1, #CAD0E5);
+  background: -o-linear-gradient(left, #1B45E1, #CAD0E5);
+  background: linear-gradient(to right, #1B45E1, #CAD0E5);
+  -o-webkit-background-clip: text;
+  -webkit-text-fill-color: rosybrown
+}
+header{
+  display: flex;
+  width:90%;
+  margin: auto;
+  height:5vh;
+  align-content: center
+}
+.logo-picture,.nav-links{
+  display: flex
+}
+
+.logo-picture{
+  flex:1
+}
+.nav-links{
+  flex:2;
+  justify-content: flex-end
+}
+.nav-link{
+  color: #1F2028;
+  text-decoration: none;
+ font-size: 25px
+}
+.logo-picture h3{
+  font-size: 50px;
+  font-family: Arial
+}
+
+.welcome{
+  display: flex;
+  width:90%;
+  margin:auto;
+  min-height: 95vh;
+  align-items: center;
+  flex: 1
+}
+.welcome-note{
+  color: #2532CC;
+  display:flex
+}
+⇝.Main h1{
+  font-size: 40;
+  font-weight: 400
+}
+⇝.Main p{
+  margin-top: 15px;
+  font-size: 25px
+}
+
+.My-pic{
+  flex: 1;
+  animation: drop 2.5s bomb;
+  
+ }
+.action{
+  padding: 90px,0px,0px,0px;
+  border: 2px solid #7B82D0;
+}
+@keyframes bomb{
+  0%{ opacity: 0;
+      transform:  translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media screen and(max-width:1024px){
+    .welcome{
+      flex-direction: column;
+      
+    }
+  }
